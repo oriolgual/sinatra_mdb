@@ -8,7 +8,7 @@ module SinatraMdb
     end
 
     get '/' do
-      "Hello World"
+      erb :home, layout: :application
     end
   end
 end

@@ -11,7 +11,7 @@ module SinatraMdb
         get '/'
 
         expect(last_response).to be_ok
-        expect(last_response.body).to eq('Hello World')
+        expect(last_response.body).to include('Hello World')
       end
     end
   end
