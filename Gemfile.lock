@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     sinatra_mdb (0.0.1)
-      foreman
+      foreman (= 0.75)
       imdb (= 0.8.2)
       sinatra (= 1.4.5)
       sinatra-contrib (= 1.4.2)

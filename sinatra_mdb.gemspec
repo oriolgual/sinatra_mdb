@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "sinatra", "1.4.5"
   spec.add_dependency "sinatra-contrib", "1.4.2"
   spec.add_dependency "imdb", "0.8.2"
-  spec.add_dependency "foreman"
+  spec.add_dependency "foreman", "0.75"
 end
