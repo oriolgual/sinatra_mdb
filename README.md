@@ -1,31 +1,51 @@
 # SinatraMdb
 
-TODO: Write a gem description
+We are holding a party! You know how parties are at Ironhack so expect no snacks here. In our case we will hold a movie party but fear not, we are not watching "Elvira, mistress of the dark" again. We are building a simple game for movie lovers.
 
-## Installation
+## Setup
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'sinatra_mdb'
+```bash
+git clone git@github.com:oriolgual/sinatra_mdb.git
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install sinatra_mdb
+    $ bundle install
 
 ## Usage
 
-TODO: Write usage instructions here
+To start the application execute:
 
-## Contributing
+    $ foreman start
+    
+Or directly with `rackup`:
 
-1. Fork it ( https://github.com/[my-github-username]/sinatra_mdb/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+    $ rackup config.ru
+    
+## Tests
+
+We're using `rspec` to test our application. To run the whole test suite:
+
+    $ bundle exec rake
+
+or:
+
+    $ bundle exec rspec spec/
+    
+If you want to run an individual spec:
+
+    $ bundle exec rspec spec/lib/sinatra_mdb/web_spec.rb
+    
+You can even run a single example in a spec file, by specifing its line:
+
+    $ bundle exec rspec spec/lib/sinatra_mdb/web_spec.rb:9
+
+## Deploying to Heroku
+
+Deploying to Heroku is really easy:
+
+    $ heroku login (enter your credentials)
+    $ heroku create
+    $ git push heroku master
+    
+Then just visit the URL printed by `heroku create` or just run `heroku open`.
