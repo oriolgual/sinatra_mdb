@@ -48,4 +48,4 @@ Deploying to Heroku is really easy:
     $ heroku create
     $ git push heroku master
     
-Then just visit the URL printed by `heroku create` or just run `heroku open`.
+Then just visit the URL printed by `heroku create` or just run `heroku open`. You can visit an example of this application [here](https://whispering-scrubland-9741.herokuapp.com/)
