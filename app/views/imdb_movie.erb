@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <% movies.each do |film| %>
+      <div>
+        <h3><%= film.title %> (<%= film.rating %>)</h3>
+        <img src="<%= film.poster %>" />
+    <% end %>
+  </ul>
+</div>
