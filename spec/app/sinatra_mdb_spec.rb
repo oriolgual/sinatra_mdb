@@ -1,3 +1,5 @@
+require 'sinatra_mdb'
+
 module SinatraMdb
   describe 'Web' do
     include Rack::Test::Methods

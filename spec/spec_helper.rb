@@ -1,5 +1,6 @@
+$:<< File.join(File.dirname(__FILE__), '../app')
+
 require 'rspec'
-require 'sinatra_mdb'
 require 'pry'
 require 'rack/test'
 ENV['RACK_ENV'] = 'test'
