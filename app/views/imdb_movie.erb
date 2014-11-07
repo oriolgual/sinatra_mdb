@@ -1,9 +1,8 @@
 <div>
+  <h1>Which one of this movies is from <%= search.release_years.sample %>?</h1>
   <ul>
-    <% movies.each do |film| %>
-      <div>
-        <h3><%= film.title %> (<%= film.rating %>)</h3>
-        <img src="<%= film.poster %>" />
+    <% search.movies.each do |film| %>
+      <li><img src="<%= film.poster_url %>" /></li>
     <% end %>
   </ul>
 </div>

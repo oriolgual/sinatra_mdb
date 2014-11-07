@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem "sinatra", "1.4.5"
 gem "sinatra-contrib", "1.4.2"
-gem "imdb", "0.8.2"
+gem "spotlite"
 
 group :development do
   gem "bundler", "~> 1.7"

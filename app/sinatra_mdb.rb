@@ -25,9 +25,9 @@ module SinatraMdb
     end
 
     post '/imdb' do
-      movies = MovieSearch.new(params[:query]).movies
+      search = MovieSearch.new(params[:query])
 
-      erb :imdb_movie, layout: :application, locals: {movies: movies}
+      erb :imdb_movie, layout: :application, locals: {search: search}
     end
   end
 end
